@@ -89,6 +89,13 @@ public class MainActivity extends Activity {
     	startActivity(intent);
     }
     
+    public void Tasks(View view)
+    {
+    	Intent intent = new Intent (this, TasksActivity.class); 
+    	
+    	startActivity(intent);
+    }
+    
 	/**
 	*
 	* @author Anthony Pugliese, Michael Carignan-Jacob

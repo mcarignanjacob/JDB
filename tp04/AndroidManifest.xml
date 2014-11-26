@@ -42,6 +42,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.tp04.MainActivity" />
         </activity>
+        <activity android:name="Tasks"></activity>
     </application>
 
 </manifest>

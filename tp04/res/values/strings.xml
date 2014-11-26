@@ -15,7 +15,7 @@
     <string name="bt_ps">Pause !</string>
     <string name="tb_wl_text">Entrez la note ici</string>
     <string name="title_activity_calendar">Calendar</string>
-    <string name="bt_calendar_txt">Calendrier</string>
+    <string name="bt_calendar_txt">Calendrier</string><string name="bt_tasks_txt">Tâches</string>
     <string name="bt_calendar_add_event">Ajouter</string>
     <string name="bt_calendar_cancel">Annuler</string>
     <string name="tv_calendar_bTime">Heure de Début</string>
