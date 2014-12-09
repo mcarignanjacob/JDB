@@ -11,26 +11,22 @@
 
     <EditText
         android:id="@+id/Event_Txt"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:ems="10"
-        android:text="@string/event_text" >
-
-        <requestFocus />
-    </EditText>
+        android:hint="@string/event_text" />
 
     <EditText
         android:id="@+id/edit_lieu"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignRight="@+id/edit_Description"
         android:layout_below="@+id/edit_Description"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/bt_add_event"
         android:ems="10"
-        android:text="@string/edit_lieu" />
+        android:hint="@string/edit_lieu" />
 
     <EditText
         android:id="@+id/edit_Description"
@@ -40,32 +36,22 @@
         android:layout_alignRight="@+id/Event_Txt"
         android:layout_below="@+id/Event_Txt"
         android:ems="10"
-        android:text="@string/edit_description" />
+        android:hint="@string/edit_description" />
 
 	<CalendarView
 	    android:id="@+id/calendar"
 	    android:layout_width="match_parent"
 	    android:layout_height="match_parent"
-	    android:layout_above="@+id/bt_add_event"
 	    android:layout_alignParentEnd="false"
 	    android:layout_below="@+id/edit_lieu"
 	    android:onClick="DatePicked" />
 
 	<Button
-	    android:id="@+id/bt_cancel"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_alignParentBottom="true"
-	    android:layout_alignParentLeft="true"
-	    android:onClick="returnToMainActivity"
-	    android:text="@string/bt_calendar_cancel" />
-
-	<Button
 	    android:id="@+id/bt_add_event"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
-	    android:layout_alignParentBottom="true"
-	    android:layout_alignParentRight="true"
+		android:layout_below="@+id/edit_Description"
+		android:layout_alignParentRight="true"
 	    android:onClick="BTaddEvent"
 	    android:text="@string/bt_calendar_add_event" />
 
